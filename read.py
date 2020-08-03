@@ -12,4 +12,14 @@ print('file is completely read total', len(data), 'data!')
 sum_len = 0
 for d in data:
 	sum_len = sum_len + len(d)
-	print('average is', sum_len/len(data))
+	print('average is', sum_len/len(data))#len(data)=1000000
+
+new = []
+new2 = []
+for d in data:
+	if len(d) < 100:
+		new.append(d)
+	else:
+		new2.append(d)
+print('一共有', len(new), '長度少於100')
+print('一共有', len(new2), '長度多於100')
